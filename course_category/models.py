@@ -28,7 +28,7 @@ class SubCourseCategory(models.Model):
 
 
 class MainCourseCategoryAssign(models.Model):
-    course_id = models.CharField(verbose_name="Main Category Name", max_length=100, null=True)
+    course_id = models.CharField(verbose_name="Course ID", max_length=100, null=True)
     category = models.ForeignKey(MainCourseCategory, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -40,7 +40,7 @@ class MainCourseCategoryAssign(models.Model):
 
 
 class SubCourseCategoryAssign(models.Model):
-    course_id = models.CharField(verbose_name="Sub Category Name", max_length=100, null=True)
+    course_id = models.CharField(verbose_name="Course ID", max_length=100, null=True)
     category = models.ForeignKey(SubCourseCategory, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 
