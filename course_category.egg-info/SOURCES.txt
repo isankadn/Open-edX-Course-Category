@@ -1,0 +1,10 @@
+README.md
+setup.py
+course_category/__init__.py
+course_category/admin.py
+course_category/models.py
+course_category.egg-info/PKG-INFO
+course_category.egg-info/SOURCES.txt
+course_category.egg-info/dependency_links.txt
+course_category.egg-info/requires.txt
+course_category.egg-info/top_level.txt

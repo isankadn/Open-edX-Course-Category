@@ -1,0 +1,1 @@
+Open edX course category assignments module
