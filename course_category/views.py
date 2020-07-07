@@ -20,6 +20,15 @@ def main_course_category(self, request_id, course_id):
         main_cat = None
 
     return main_cat
+
+def sub_course_category(self, request_id, course_id):
+
+    try:
+        sub_cat = SubCourseCategoryAssign.objects.filter(category=request_id, course_id=course_id).count()
+    except ObjectDoesNotExist:
+        sub_cat = None
+
+    return sub_cat
     #
     # if main_cat:
     #     return main_cat
